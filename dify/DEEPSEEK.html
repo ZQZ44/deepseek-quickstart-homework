@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek - 深度求索 AI</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #64748b;
+        }
+        .features {
+            padding: 4rem 2rem;
+            background-color: white;
+        }
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            background-color: var(--light);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .copyright {
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DeepSeek</div>
+            <div class="nav-links">
+                <a href="#features">产品</a>
+                <a href="#">解决方案</a>
+                <a href="#">文档</a>
+                <a href="#">定价</a>
+                <a href="#">关于我们</a>
+            </div>
+            <button class="btn">开始使用</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>探索 AI 的无限可能</h1>
+            <p>DeepSeek 提供先进的 AI 模型和工具，帮助您解决复杂问题，释放创造力</p>
+            <button class="btn">免费试用</button>
+        </section>
+
+        <section class="features" id="features">
+            <div class="features-container">
+                <div class="section-title">
+                    <h2>我们的核心能力</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>强大的语言模型</h3>
+                        <p>基于最先进的 Transformer 架构，提供流畅、准确的文本理解和生成能力。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>多模态支持</h3>
+                        <p>支持文本、图像、音频等多种数据类型的处理和分析。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>企业级安全</h3>
+                        <p>数据加密和隐私保护措施，确保您的信息安全。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>可定制化</h3>
+                        <p>根据您的特定需求调整模型参数和训练数据。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>API 集成</h3>
+                        <p>简单易用的 API，轻松集成到您的应用程序中。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>持续更新</h3>
+                        <p>我们的模型不断学习和改进，始终保持领先。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">隐私政策</a>
+            <a href="#">服务条款</a>
+            <a href="#">联系我们</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p class="copyright">© 2023 DeepSeek. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
